@@ -30,3 +30,6 @@ for task in json_tasks["Tasks"]:
             print("Started", name, "with pid:", pid)
         except (SystemError, FileNotFoundError):
             print("Had an issue opening", name)
+           
+    else:
+        print(name, "already running.")
